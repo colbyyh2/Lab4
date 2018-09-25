@@ -73,6 +73,13 @@ public class Colosseum {
      */
     public static Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
+        System.out.println("Name your pokemon: ");
+        tempPokemon.name = myScan.nextLine();
+        System.out.println("Enter some numbers: ");
+        tempPokemon.hitPoints = myScan.nextInt();
+        tempPokemon.attackLevel = myScan.nextInt();
+        tempPokemon.defenseLevel = myScan.nextInt();
+        myScan.nextLine();
         return tempPokemon;
     }
 
@@ -113,14 +120,14 @@ public class Colosseum {
         System.out.println("Player 1, build your Pokemon!");
         System.out.println("=================");
         firstPokemon = buildPokemon();
-        firstPokemon.name = "Chuchu";
+        //firstPokemon.name = "Chuchu";
 
-        System.out.println("");
+        //System.out.println("");
 
         System.out.println("Player 2, build your Pokemon!");
         System.out.println("==================");
         secondPokemon = buildPokemon();
-        secondPokemon.name = "Xyz";
+        //secondPokemon.name = "Xyz";
     }
 
     /**
